@@ -1,0 +1,102 @@
+@import 'normalize.css';
+
+:root {
+    --default-layout-width: 1150px;
+    --default-layout-horizontal-spacer: 24px;
+
+    --primary: #fe2c55;
+    --text-color: #161823;
+    --text-blur-color: rgba(22, 24, 35, 0.34);
+    --white: #fff;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/fonts/Proxima-Nova-Bold.woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/fonts/ProximaNova-Semibold.woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/fonts/Proxima-Nova-Regular.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: SofiaPro;
+    src: url('/assets/fonts/sofiapro-bold.woff2');
+    font-weight: 700;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'ProximaNova', sans-serif;
+    font-size: 1.6rem;
+}
+
+button,
+input,
+[tabindex] {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: 'ProximaNova', sans-serif;
+}
+
+a[href] {
+    // color: var(--text-color);
+    text-decoration: none;
+}
+
+a {
+    color: var(--text-color);
+}
+
+.mr-8 {
+    margin-right: 8px;
+}
+
+.ml-16 {
+    margin-left: 16px;
+}
+
+.df {
+    display: flex;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+//Custom tippy tooltip
+body {
+    .tippy-box {
+        border-radius: 8px;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        background-color: rgba(84, 84, 84, 0.92);
+        color: var(--white);
+    }
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
+    .tippy-content {
+        padding: 8px 9px;
+    }
+}
